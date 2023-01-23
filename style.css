@@ -96,10 +96,19 @@ input[placeholder] {
   opacity: 0.7;
 }
 
+input[placeholder]:focus {
+  color: #000000;
+}
+
 select {
   font-family: "TradeGothic LT Extended";
   color: #c4c4c4;
   opacity: 0.7;
+}
+
+option[value] {
+  font-family: "Ogg", Fallback, sans-serif;
+  color: #000000;
 }
 
 input[type="submit"] {
@@ -123,7 +132,7 @@ input[type="submit"] {
   align-self: center;
 }
 
-.checkbox {
+/*.checkbox {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
@@ -133,5 +142,37 @@ input[type="checkbox"] {
   margin-right: 14px;
   width: 25px;
   height: 32px;
-  border-radius: 10px;
+}*/
+
+.check-box-form {
+  display: grid;
+  grid-template-columns: 25px auto;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: white;
+  font-size: large;
+  display: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #71870e;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
 }
