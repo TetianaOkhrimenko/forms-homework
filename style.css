@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Ogg";
+  src: url(fonts/OggLightItalic.woff2) format(woff2);
+  src: url(fonts/OggLight.woff) format(woff);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url(fonts/Trade\ Gothic\ LT\ Extended.woff2) format(woff2);
+  src: url(fonts/Trade\ Gothic\ LT\ Extended.woff) format(woff);
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}

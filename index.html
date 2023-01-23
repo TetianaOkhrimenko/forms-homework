@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>Sebastian Mullaert</title>
+  </head>
+  <body>
+    <form action="#" method="GET">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your email" />
+      </div>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" />
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <input
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Start typing here"
+        />
+      </div>
+
+      <div>
+        <label for="project">Project type</label>
+        <select name="project" id="project" placeholder="Choose">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="">Reserve for personal event</option>
+          <option value="">Buy tickets for a next concert</option>
+          <option value="">Reserve from a venue</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="checkbox" name="agreement" id="agreement" />
+        <label for="agreement"
+          >I agree to receive ocasional newsletter with latest news and
+          updates</label
+        >
+      </div>
+
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>
