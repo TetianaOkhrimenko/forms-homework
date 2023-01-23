@@ -9,47 +9,74 @@
     <title>Sebastian Mullaert</title>
   </head>
   <body>
-    <form action="#" method="GET">
+    <section class="form-section">
       <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Your email" />
+        <h3><span>(Booking)</span>Send an email</h3>
+        <p>
+          If you have a general or project enquiry, please drop me an email —
+          available now
+        </p>
       </div>
+      <div class="form-box">
+        <form action="#" method="GET">
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              autocomplete="off"
+            />
+          </div>
 
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your name" />
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              autocomplete="off"
+            />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Start typing here"
+              autocomplete="off"
+            />
+          </div>
+
+          <div>
+            <label for="project">Project type</label>
+            <select name="project" id="project">
+              <option value="option-0" disabled selected hidden>Choose</option>
+              <option value="option-1">Reserve for personal event</option>
+              <option value="option-2">Buy tickets for a next concert</option>
+              <option value="option-3">Reserve from a venue</option>
+              <option value="option-4">Other</option>
+            </select>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="agreement" id="agreement" />
+            <label for="agreement"
+              >I agree to receive ocasional newsletter with latest news and
+              updates</label
+            >
+          </div>
+
+          <div class="send-button">
+            <img src="images/icon.png" alt="Icon" />
+            <input type="submit" value="Send" />
+          </div>
+        </form>
       </div>
-
-      <div>
-        <label for="message">Message</label>
-        <input
-          type="text"
-          name="message"
-          id="message"
-          placeholder="Start typing here"
-        />
-      </div>
-
-      <div>
-        <label for="project">Project type</label>
-        <select name="project" id="project" placeholder="Choose">
-          <option value="" disabled selected hidden>Choose</option>
-          <option value="">Reserve for personal event</option>
-          <option value="">Buy tickets for a next concert</option>
-          <option value="">Reserve from a venue</option>
-          <option value="">Other</option>
-        </select>
-      </div>
-
-      <div>
-        <input type="checkbox" name="agreement" id="agreement" />
-        <label for="agreement"
-          >I agree to receive ocasional newsletter with latest news and
-          updates</label
-        >
-      </div>
-
-      <input type="submit" value="Send" />
-    </form>
+    </section>
   </body>
 </html>
