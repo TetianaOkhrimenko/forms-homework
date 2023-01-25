@@ -127,7 +127,7 @@ input[type="checkbox"]:checked::after {
   color: #000000;
 }
 
-.form-section span {
+.pre-heading {
   font-family: "TradeGothic LT Extended";
   font-size: 16px;
   line-height: 28px;
@@ -135,6 +135,10 @@ input[type="checkbox"]:checked::after {
   opacity: 0.55;
   justify-self: flex-end;
   padding-right: 109px;
+}
+
+.italic-style {
+  font-style: italic;
 }
 
 .form-section p {
@@ -225,6 +229,11 @@ input[type="checkbox"] {
 
   .form-section span {
     display: none;
+  }
+
+  .send-button img {
+    margin-left: 0;
+    justify-content: center;
   }
 
   .check-box-form {
